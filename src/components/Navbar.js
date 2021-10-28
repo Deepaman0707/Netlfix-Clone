@@ -7,6 +7,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 function Navbar() {
   const [transparent, setTransparent] = useState(false)
   const [textBox, setTextBox] = useState(false)
+
   const transparency = () => {
     if (window.scrollY > 100) {
       setTransparent(true)
@@ -28,12 +29,10 @@ function Navbar() {
     } else {
       setTextBox(false)
     }
-    console.log(textBox)
   }
-
   return (
     <div
-      className={`nav w-screen grid grid-flow-col grid-col-2 items-center${
+      className={`nav w-screen grid grid-flow-col grid-col-2 items-center ${
         transparent ? 'bg-black' : 'bg-transparent'
       }`}
     >

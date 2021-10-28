@@ -1,13 +1,9 @@
 import './App.css'
-import Banner from './components/Banner.js'
-import Navbar from './components/Navbar.js'
-import Row from './components/Row.js'
+import HomeScreen from './HomeScreen'
 function App() {
   return (
     <div>
-      <Navbar />
-      <Banner />
-      <Row />
+      <HomeScreen />
     </div>
   )
 }
