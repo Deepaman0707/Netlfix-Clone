@@ -20,19 +20,19 @@ function Banner() {
     }
     loadBanner()
   }, [])
-  console.log(movie)
 
   const makeShort = (string, n) => {
     return string?.length >= n ? string.substr(0, n - 1) + '...' : string
   }
 
   return (
-    <div
+    <header
       className='banner'
       style={{
-        backgroundSize: '100vw',
+        backgroundSize: 'cover',
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
         backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
       }}
     >
       <div className='bannerContent'>
@@ -65,7 +65,7 @@ function Banner() {
         {/* buttons */}
       </div>
       <div className='gradient'></div>
-    </div>
+    </header>
   )
 }
 
