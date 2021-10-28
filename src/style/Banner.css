@@ -1,6 +1,7 @@
 .banner {
   position: relative;
   object-fit: contain;
+  z-index: -1;
 }
 
 .bannerContent {
